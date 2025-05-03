@@ -26,7 +26,7 @@ $this->need('header.php');
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
             <?php postMeta($this); ?>
             <div class="post-content" itemprop="articleBody">
-            <?php $this->content('350'); ?>
+            <?php $this->excerpt(200, '...'); ?>
             </div>
         </article>
     <?php endwhile; ?>
