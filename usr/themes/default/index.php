@@ -26,8 +26,7 @@ $this->need('header.php');
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
             <?php postMeta($this); ?>
             <div class="post-content" itemprop="articleBody">
-               <?php $post->excerpt(350, '...'); ?>
-                <?php $this->content(_t('阅读剩余部分')); ?>
+            <?php $this->content('auto'); ?>
             </div>
         </article>
     <?php endwhile; ?>
